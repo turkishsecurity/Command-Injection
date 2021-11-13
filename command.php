@@ -5,7 +5,7 @@
 </head>
 <body>
 <center>
-	<h1>command injection + xss xale</h1>
+	<h1>command injection + xss by @xaletr</h1>
 	<form action="command.php" method="POST">
 		<input type="text" name="veri">
 		<input type="submit" name="gonder">
