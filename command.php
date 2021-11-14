@@ -5,14 +5,14 @@
 </head>
 <body>
 <center>
-	<h1>command injection + xss by @xaletr</h1>
-	<form action="command.php" method="POST">
+	<h1>command injection by @xaletr</h1>
+	<form method="POST">
 		<input type="text" name="veri">
 		<input type="submit" name="gonder">
 	</form>
 <?php
 error_reporting(0);
-$veri = $_POST['veri'];
+$veri = htmlspecialchars($_POST['veri']);
 echo `echo $veri`;
 ?>
 </center>
